@@ -4,8 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt
 const Footer = () => {
   const navigationLinks = [
     { title: "Home", href: "#" },
-    { title: "Rooms", href: "#" },
-    { title: "Amenities", href: "#" },
+    { title: "Tours", href: "#" },
     { title: "About Us", href: "#" },
     { title: "Contact", href: "#" }
   ];
