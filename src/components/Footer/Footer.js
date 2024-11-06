@@ -24,15 +24,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-4">Luxury Hotel & Resort</h3>
             <div className="flex items-center space-x-3">
-              <FaMapMarkerAlt className="w-5 h-5 text-yellow-400" />
+              <FaMapMarkerAlt className="w-5 h-5 text-blue-400" />
               <p>Thu Duc, Ho Chi Minh City</p>
             </div>
             <div className="flex items-center space-x-3">
-              <FaPhone className="w-5 h-5 text-yellow-400" />
+              <FaPhone className="w-5 h-5 text-blue-400" />
               <p>+84 336570572</p>
             </div>
             <div className="flex items-center space-x-3">
-              <FaEnvelope className="w-5 h-5 text-yellow-400" />
+              <FaEnvelope className="w-5 h-5 text-blue-400" />
               <p>ngohoangkiet789@gmail.com</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="hover:text-yellow-400 transition-transform duration-300 transform hover:scale-105"
+                    className="hover:text-blue-400 transition-transform duration-300 transform hover:scale-105"
                     aria-label={`Navigate to ${link.title}`}
                   >
                     {link.title}
@@ -63,12 +63,12 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 bg-gray-800 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-2 bg-gray-800 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-label="Email subscription input"
               />
               <button
                 type="submit"
-                className="absolute right-2 top-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105"
+                className="absolute right-2 top-2 bg-blue-400 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-blue-500 transition-transform duration-300 transform hover:scale-105"
                 aria-label="Subscribe to newsletter"
               >
                 Subscribe
@@ -84,7 +84,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-                  className="text-gray-400 hover:text-yellow-400 transition-transform duration-300 transform hover:rotate-6 hover:scale-110"
+                  className="text-gray-400 hover:text-blue-400 transition-transform duration-300 transform hover:rotate-6 hover:scale-110"
                   aria-label={`Visit our ${social.label} page`}
                 >
                   <span className="text-2xl">{social.icon}</span>
