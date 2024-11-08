@@ -24,7 +24,6 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Luxury Hotel & Resort</h3>
             <div className="flex items-center space-x-3">
-<<<<<<< HEAD
               <FaMapMarkerAlt className="w-5 h-5 text-blue-400" />
               <p>Thu Duc, Ho Chi Minh City</p>
             </div>
@@ -34,17 +33,6 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="w-5 h-5 text-blue-400" />
-=======
-              <FaMapMarkerAlt className="w-5 h-5 text-blue-700" />
-              <p>Thu Duc, Ho Chi Minh City</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <FaPhone className="w-5 h-5 text-blue-700" />
-              <p>+84 336570572</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <FaEnvelope className="w-5 h-5 text-blue-700" />
->>>>>>> 7ac5dcbfff6fcce3b73d1df3c4cece37386abfa8
               <p>ngohoangkiet789@gmail.com</p>
             </div>
           </div>
@@ -52,16 +40,12 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               {navigationLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
-<<<<<<< HEAD
-                    className="hover:text-blue-400 transition-transform duration-300 transform hover:scale-105"
-=======
-                    className="hover:text-blue-500 transition-colors duration-200"
->>>>>>> 7ac5dcbfff6fcce3b73d1df3c4cece37386abfa8
+                    className="text-gray-500 hover:text-gray-700"
                     aria-label={`Navigate to ${link.title}`}
                   >
                     {link.title}
@@ -79,20 +63,12 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-<<<<<<< HEAD
-                className="w-full px-4 py-2 bg-gray-800 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-=======
-                className="w-full px-4 py-2 bg-white rounded-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow"
->>>>>>> 7ac5dcbfff6fcce3b73d1df3c4cece37386abfa8
+                className="px-4 py-2 border border-gray-300 rounded"
                 aria-label="Email subscription input"
               />
               <button
                 type="submit"
-<<<<<<< HEAD
-                className="absolute right-2 top-2 bg-blue-400 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-blue-500 transition-transform duration-300 transform hover:scale-105"
-=======
-                className="bg-blue-700 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-600 transition-colors duration-200"
->>>>>>> 7ac5dcbfff6fcce3b73d1df3c4cece37386abfa8
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 aria-label="Subscribe to newsletter"
               >
                 Subscribe
@@ -108,11 +84,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
-<<<<<<< HEAD
-                  className="text-gray-400 hover:text-blue-400 transition-transform duration-300 transform hover:rotate-6 hover:scale-110"
-=======
-                  className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
->>>>>>> 7ac5dcbfff6fcce3b73d1df3c4cece37386abfa8
+                  className="text-gray-500 hover:text-gray-700"
                   aria-label={`Visit our ${social.label} page`}
                 >
                   <span className="text-2xl">{social.icon}</span>

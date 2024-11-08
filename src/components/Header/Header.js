@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FaSearch, FaBars, FaUser, FaCog, FaSignOutAlt, FaHotel, FaMapMarkedAlt, FaPhoneAlt, FaInfoCircle } from "react-icons/fa";
+cd import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -19,12 +21,10 @@ const Header = () => {
   }, [isDropdownOpen]);
 
   const navigationLinks = [
-    { name: "Home", icon: FaHotel },
-    // { name: "Destinations", icon: FaMapMarkedAlt },
-    // { name: "Hotels", icon: FaHotel },
-    { name: "Tours", icon: FaMapMarkedAlt },
-    { name: "About Us", icon: FaInfoCircle },
-    { name: "Contact", icon: FaPhoneAlt }
+    { name: "Home", icon: FaHotel, onClick: () => navigate("/") },
+    { name: "Tours", icon: FaMapMarkedAlt, onClick: () => navigate("/tours") },
+    { name: "About Us", icon: FaInfoCircle, onClick: () => navigate("/about") },
+    { name: "Contact", icon: FaPhoneAlt, onClick: () => navigate("/contact") }
   ];
 
   return (
@@ -43,6 +43,7 @@ const Header = () => {
             {navigationLinks.map((link) => (
               <button
                 key={link.name}
+                onClick={link.onClick}
                 className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium flex items-center space-x-1"
               >
                 <link.icon className="h-4 w-4" />
@@ -121,6 +122,7 @@ const Header = () => {
               {navigationLinks.map((link) => (
                 <button
                   key={link.name}
+                  onClick={link.onClick}
                   className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium flex items-center space-x-2"
                 >
                   <link.icon className="h-5 w-5" />
