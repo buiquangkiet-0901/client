@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { FaSearch, FaBars, FaUser, FaCog, FaSignOutAlt, FaHotel, FaMapMarkedAlt, FaPhoneAlt, FaInfoCircle } from "react-icons/fa";
-cd import { useNavigate } from "react-router-dom";
+import {
+  FaSearch,
+  FaBars,
+  FaUser,
+  FaCog,
+  FaSignOutAlt,
+  FaHotel,
+  FaMapMarkedAlt,
+  FaPhoneAlt,
+  FaInfoCircle,
+} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +34,7 @@ const Header = () => {
     { name: "Home", icon: FaHotel, onClick: () => navigate("/") },
     { name: "Tours", icon: FaMapMarkedAlt, onClick: () => navigate("/tours") },
     { name: "About Us", icon: FaInfoCircle, onClick: () => navigate("/about") },
-    { name: "Contact", icon: FaPhoneAlt, onClick: () => navigate("/contact") }
+    { name: "Contact", icon: FaPhoneAlt, onClick: () => navigate("/contact") },
   ];
 
   return (
@@ -92,8 +102,18 @@ const Header = () => {
               </div>
             ) : (
               <div className="space-x-4">
-                <button className="text-blue-600 hover:text-blue-800 font-medium">Login</button>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Sign Up</button>
+                <button
+                  onClick={() => navigate("/login")}
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Login
+                </button>
+                <button
+                  onClick={() => navigate("/register")}
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+                >
+                  Sign Up
+                </button>
               </div>
             )}
           </div>
@@ -130,10 +150,21 @@ const Header = () => {
                 </button>
               ))}
               {!isLoggedIn && (
-                <div className="space-y-2">
-                  <button className="w-full text-blue-600 hover:text-blue-800 font-medium py-2">Login</button>
-                  <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Sign Up</button>
-                </div>
+                <div className="flex space-x-4">
+                <button
+                  onClick={() => navigate("/login")}
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Login
+                </button>
+                <button
+                  onClick={() => navigate("/register")}
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+                >
+                  Sign Up
+                </button>
+              </div>
+              
               )}
             </div>
           </div>

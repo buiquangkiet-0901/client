@@ -12,7 +12,7 @@ const tours = [
     title: "Westminister Bridge",
     city: "London",
     price: 99,
-    decs: 'this is the description',
+    desc: 'this is the description',
     avgRating: 4.5,
     reviews: [
       {
@@ -21,7 +21,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg01,
+    images: [tourImg01],
     featured: true,
   },
   {
@@ -39,7 +39,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg02,
+    images: [tourImg02],
  
   },
   {
@@ -57,7 +57,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg03,
+    images: [tourImg03],
 
   },
   {
@@ -75,7 +75,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg04,
+    images: [tourImg04],
   
   },
   {
@@ -93,7 +93,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg05,
+    images: [tourImg05],
 
   },
   {
@@ -111,7 +111,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg06,
+    images: [tourImg06],
 
   },
   {
@@ -129,7 +129,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg07,
+    images: [tourImg07],
 
   },
   {
@@ -147,7 +147,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: tourImg03,
+    images: [tourImg03],
  
   },
 ];

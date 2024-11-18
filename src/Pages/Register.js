@@ -1,8 +1,11 @@
 import React from 'react'
+import Login from './Login';
 
 function Register() {
   return (
-    <div>register</div>
+    <>
+    <Login/>
+    </>
   )
 }
 

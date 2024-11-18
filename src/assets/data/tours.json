@@ -9,7 +9,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img01.jpg",
+    "images": ["/tour-images/tour-img01.jpg"],
     "featured": true
   },
   {
@@ -19,10 +19,10 @@
     "distance": 400,
     "price": 99,
     "maxGroupSize": 8,
-    "images": "this is the description",
+    "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img02.jpg",
+    "images": ["/tour-images/tour-img02.jpg"],
     "featured": true
   },
   {
@@ -35,7 +35,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img03.jpg",
+    "images": ["/tour-images/tour-img03.jpg"],
     "featured": true
   },
   {
@@ -48,7 +48,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img04.jpg",
+    "images": ["/tour-images/tour-img04.jpg"],
     "featured": true
   },
   {
@@ -61,7 +61,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img05.jpg",
+    "images": ["/tour-images/tour-img05.jpg"],
     "featured": true
   },
   {
@@ -74,7 +74,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img06.jpg",
+    "images": ["/tour-images/tour-img06.jpg"],
     "featured": true
   },
   {
@@ -87,7 +87,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": "/tour-images/tour-img07.jpg",
+    "images": ["/tour-images/tour-img07.jpg"],
     "featured": true
   },
   {
@@ -100,7 +100,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "photo": "/tour-images/tour-img03.jpg",
+    "images": ["/tour-images/tour-img07.jpg"],
     "featured": true
   },
   {
@@ -113,7 +113,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "photo": "/tour-images/tour-img08.jpg",
+    "images": ["/tour-images/tour-img08.jpg"],
     "featured": false
   },
   {
@@ -126,7 +126,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "photo": "/tour-images/tour-img09.jpg",
+    "images": ["/tour-images/tour-img09.jpg"],
     "featured": false
   }
 ]
