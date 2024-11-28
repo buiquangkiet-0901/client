@@ -75,7 +75,7 @@ const tours = [
       },
     ],
     avgRating: 4.5,
-    images: [tourImg04],
+    images: [tourImg04,tourImg05],
   
   },
   {

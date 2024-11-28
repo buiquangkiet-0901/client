@@ -22,7 +22,7 @@
     "desc": "this is the description",
     "reviews": [],
 
-    "images": ["/tour-images/tour-img02.jpg"],
+    "images": ["/tour-images/tour-img02.jpg","/tour-images/tour-img01.jpg"],
     "featured": true
   },
   {
